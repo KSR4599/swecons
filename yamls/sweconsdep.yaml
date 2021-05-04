@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: spring
-  name: spring-producer-deployment
+  name: spring-consumer-deployment
 spec:
   replicas: 3
   selector:
@@ -15,5 +15,5 @@ spec:
         app: spring
     spec:
       containers:
-      - image: ksreddy4599/swe_cons:latest
+      - image: ksreddy4599/swe_cons_1:latest
         name: spring
